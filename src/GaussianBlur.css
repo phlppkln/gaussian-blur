@@ -1,0 +1,159 @@
+.gaussian-blur-wrapper {
+	width: 100%;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.loading {
+	padding: 2rem;
+	color: #6b6b6b;
+}
+
+.variant-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.variant-btn {
+	padding: 0.35rem 0.85rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	background: #ffffff;
+	color: #1a1a1a;
+	font-size: 0.8rem;
+	font-family: inherit;
+	cursor: pointer;
+	transition:
+		background 0.15s,
+		border-color 0.15s,
+		color 0.15s;
+}
+
+.variant-btn:hover {
+	border-color: #0a6b64;
+	color: #0a6b64;
+}
+
+.variant-btn.active {
+	background: #0a6b64;
+	border-color: #0a6b64;
+	color: #ffffff;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.slider-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	flex: 1;
+}
+
+.control-label {
+	font-size: 0.8rem;
+	color: #6b6b6b;
+	user-select: none;
+}
+
+.sigma-val {
+	font-weight: 700;
+	color: #1a1a1a;
+	min-width: 2.5ch;
+	display: inline-block;
+}
+
+.sigma-slider {
+	width: 100%;
+	accent-color: #0a6b64;
+	cursor: pointer;
+}
+
+.auto-btn {
+	padding: 0.35rem 0.85rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	background: #ffffff;
+	color: #1a1a1a;
+	font-size: 0.8rem;
+	font-family: inherit;
+	cursor: pointer;
+	white-space: nowrap;
+	transition:
+		background 0.15s,
+		border-color 0.15s,
+		color 0.15s;
+}
+
+.auto-btn:hover {
+	border-color: #0a6b64;
+	color: #0a6b64;
+}
+
+.auto-btn.active {
+	background: #0a6b64;
+	border-color: #0a6b64;
+	color: #ffffff;
+}
+
+.heatmap-block {
+	width: 100%;
+}
+
+/* ── Mode toggle ── */
+.mode-nav {
+	display: flex;
+	width: fit-content;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+.mode-btn {
+	padding: 0.4rem 1.1rem;
+	border: none;
+	background: #ffffff;
+	color: #6b6b6b;
+	font-size: 0.85rem;
+	font-family: inherit;
+	cursor: pointer;
+	transition:
+		background 0.15s,
+		color 0.15s;
+}
+
+.mode-btn + .mode-btn {
+	border-left: 1px solid #e0e0e0;
+}
+
+.mode-btn:hover:not(.active) {
+	background: #f5f5f5;
+	color: #1a1a1a;
+}
+
+.mode-btn.active {
+	background: #0a6b64;
+	color: #ffffff;
+}
+
+/* ── Attribution ── */
+.attribution {
+	margin-top: 0.5rem;
+	font-size: 0.75rem;
+	color: #6b6b6b;
+}
+
+.attribution a {
+	color: #0a6b64;
+	text-decoration: none;
+}
+
+.attribution a:hover {
+	text-decoration: underline;
+}

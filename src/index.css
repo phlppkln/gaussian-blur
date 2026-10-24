@@ -1,0 +1,98 @@
+/* Subset of Bootstrap 5 reboot plus the portfolio's global main.scss rules
+   that affect this page, so it renders the same as on philippklein.at */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
+
+html {
+	background-color: #fafafa;
+	font-family: "Lato", sans-serif;
+	font-size: 1.1rem;
+	scrollbar-gutter: stable;
+}
+
+body {
+	margin: 0;
+	font-family:
+		system-ui,
+		-apple-system,
+		"Segoe UI",
+		Roboto,
+		"Helvetica Neue",
+		"Noto Sans",
+		"Liberation Sans",
+		Arial,
+		sans-serif,
+		"Apple Color Emoji",
+		"Segoe UI Emoji",
+		"Segoe UI Symbol",
+		"Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	color: #1a1a1a;
+	line-height: 1.65;
+}
+
+a {
+	color: #0a6b64;
+	text-decoration-line: underline;
+	text-decoration-color: rgba(10, 107, 100, 0.35);
+	text-underline-offset: 0.15em;
+	font-weight: 600;
+	transition:
+		color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+		text-decoration-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover,
+a:active {
+	color: #c4443e;
+	text-decoration-color: rgba(196, 68, 62, 0.5);
+}
+
+label {
+	display: inline-block;
+}
+
+button {
+	border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+	outline: 0;
+}
+
+button,
+input {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button {
+	text-transform: none;
+}
+
+button:not(:disabled) {
+	cursor: pointer;
+}
